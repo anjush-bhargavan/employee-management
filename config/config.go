@@ -4,13 +4,14 @@ import "github.com/spf13/viper"
 
 // Config struct maps to the environment variables
 type Config struct {
-	SECRETKEY   string `mapstructure:"JWTSECRET"`
-	DBHost        string `mapstructure:"DBHOST"`
-	DBUser        string `mapstructure:"DBUSER"`
-	DBPassword    string `mapstructure:"DBPASSWORD"`
-	DBDatabase    string `mapstructure:"DBNAME"`
-	DBPort        string `mapstructure:"DBPORT"`
-	DBSslmode     string `mapstructure:"DBSSL"`
+	SECRETKEY  string `mapstructure:"JWTSECRET"`
+	DBHost     string `mapstructure:"DBHOST"`
+	DBUser     string `mapstructure:"DBUSER"`
+	DBPassword string `mapstructure:"DBPASSWORD"`
+	DBDatabase string `mapstructure:"DBNAME"`
+	DBPort     string `mapstructure:"DBPORT"`
+	DBSslmode  string `mapstructure:"DBSSL"`
+	REDISHOST  string `mapstructure:"REDISHOST"`
 }
 
 // LoadConfig will load the environment variables to accessible.
